@@ -37,7 +37,10 @@ class Stack(object):
 
     def first(self):
         """Returns a *reference* to the first item, does not remove."""
-        return self.top.value
+        if self.top:
+            return self.top.value
+        else:
+            return None
 
     def count(self):
         """Counts the number of elements in the stack."""

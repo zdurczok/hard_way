@@ -15,7 +15,7 @@ def test_pop():
     assert colors.pop() == "Cadmium Red Light"
     assert colors.pop() == None
 
-def test_top():
+def test_first():
     colors = Stack()
     colors.push("Gelb")
     assert colors.first() == "Gelb"
@@ -24,3 +24,7 @@ def test_top():
     colors.pop()
     colors.pop()
     assert colors.first() == None
+
+test_push()
+test_pop()
+test_first()
