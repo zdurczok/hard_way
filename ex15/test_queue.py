@@ -26,11 +26,16 @@ def test_first():
     colors.shift("Azorubine")
     assert colors.first() == "Lila"
 
-def test_first():
+def test_last():
     colors = Queue()
     colors.shift("Lila")
-    assert colors.first() == "Lila"
+    assert colors.last() == "Lila"
     colors.shift("Azorubine")
-    assert colors.first() == "Azorubine"
+    assert colors.last() == "Azorubine"
     colors.shift("Cyan")
-    assert colors.first() == "Cyan"
+    assert colors.last() == "Cyan"
+
+test_shift()
+test_unshift()
+test_first()
+test_last()
